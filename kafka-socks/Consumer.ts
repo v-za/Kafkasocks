@@ -103,13 +103,8 @@ class Consumer {
 
       eachMessage: async (eventInfo: EventInterface) => {
         //listening for a pause event
-        if (this.pause) {
-          if(this.resume){
-            console.log('inside nested resume in if(this.pause)')
-            console.log('this.resume: ', this.resume)
-          } else {
+        if (this.pause) {  
           this.consumer.pause([{topic: this.topic}])
-          }
           //setTimeout(() => this.consumer.resume([{topic: this.topic}]), 10000)
         }
 
