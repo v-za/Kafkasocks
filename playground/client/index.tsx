@@ -8,7 +8,7 @@ import { features } from "process";
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <Features />
+    {/* <Features /> */}
     <DataDisplay />
   </ThemeProvider>,
   document.getElementById("root") as HTMLElement

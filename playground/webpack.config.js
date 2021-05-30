@@ -42,7 +42,7 @@ module.exports = {
     contentBase: './build',
     port: 8000,
     proxy: {
-      '*': 'http://[::1]:3001',
+      '*': 'http://[::1]:3000',
       changeOrigin: true,
     }
   },
